@@ -1,0 +1,24 @@
+.contactCard {
+  width: 250px;
+  height: 70px;
+  margin-top: 12px;
+  border-radius: 10px;
+  border: solid 2px black;
+  box-shadow: 5px 5px 1px black;
+  transition: all 0.1s ease-in-out;
+  display: flex;
+  background-color: white;
+}
+
+.contactCard:hover {
+  transform: scale(1.02);
+}
+
+.contactCard img {
+  border-radius: 40px;
+  height: 100%;
+}
+
+.contactCard div {
+  margin: auto;
+}

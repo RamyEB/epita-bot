@@ -1,0 +1,99 @@
+#dialogWindow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 800px;
+  height: 80vh;
+
+  border: solid black 3px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 1px black;
+  background-color: white;
+
+  display: grid;
+  grid-template: 40px 1fr 60px / 100%;
+
+  z-index: 1;
+}
+
+#dialogWindow #dialogWindowHeader{
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}
+#dialogWindow #dialogWindowHeader p {
+height: min-content;
+margin: auto 0 auto 10px;
+font-size: 20px;
+font-weight: 600;
+}
+
+#dialogWindow .App-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+#dialogWindow #dialogBox{
+  grid-row: 2;
+  width: 100%;
+  height: 100%;
+  color: white;
+  border-top: solid black 3px;
+  border-bottom: solid black 3px;
+  overflow: scroll;
+  padding: 5px 5px;
+}
+
+#dialogWindow #inputBox{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0px 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#dialogWindow #inputBox input{
+  width: 100%;
+  height: 35px;
+  border: solid black 2px;
+  border-radius: 10px; 
+  padding: 0 5px;
+  margin-right: 5px;
+}
+
+#dialogWindow #inputBox input:focus{
+  outline-width: 0;
+}
+
+#dialogWindow #inputBox button{
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border:none;
+  padding: 6px 10px;
+}
+#dialogWindow #inputBox button:hover{
+  background-color: #393939;
+}
+#dialogWindow #inputBox button:active{
+  background-color: #5F5F5F;
+}
+@media screen and (max-width: 850px) {
+  #dialogWindow{
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #dialogWindow{
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 0px 0px 0px black;
+    border-radius: 0px;
+  }
+}
