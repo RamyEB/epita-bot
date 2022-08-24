@@ -10,8 +10,7 @@ const productMode = (env) => {
     return createStore(
       reducers,
       compose(
-        middlewareEnhancer,
-        window.devToolsExtension && window.devToolsExtension()
+        middlewareEnhancer
       )
     );
   }
